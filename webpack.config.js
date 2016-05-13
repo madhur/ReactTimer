@@ -36,7 +36,8 @@ module.exports = {
 	resolve: {
 		root: __dirname,
 		alias: {
-			applicationStyles: 'app/styles/app.scss'
+			applicationStyles: 'app/styles/app.scss',
+			Nav: 'app/components/Navigation.jsx'
 		},
 		
 		extensions: ['', '.jsx', '.js' ]
