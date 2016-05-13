@@ -11,9 +11,9 @@ var Navigation = React.createClass({
 				<div role="navigation" className="navbar navbar-default">
 					  <div className="container-fluid">
 					    <div className="navbar-header">
-					      <Link className="navbar-brand" to="#">Brand</Link>
-					      <Link className="navbar-brand" to="#">Brand1</Link>
-					      <Link className="navbar-brand" to="#">Brand2</Link>
+					      <Link className="navbar-brand" to="#">React Timer</Link>
+					      <Link className="navbar-brand" to="#">Stopwatch</Link>
+					      <Link className="navbar-brand" to="#">Timer</Link>
 					    </div>
 					  </div>
 				</div>

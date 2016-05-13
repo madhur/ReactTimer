@@ -25770,17 +25770,17 @@
 						React.createElement(
 							_reactRouter.Link,
 							{ className: 'navbar-brand', to: '#' },
-							'Brand'
+							'React Timer'
 						),
 						React.createElement(
 							_reactRouter.Link,
 							{ className: 'navbar-brand', to: '#' },
-							'Brand1'
+							'Stopwatch'
 						),
 						React.createElement(
 							_reactRouter.Link,
 							{ className: 'navbar-brand', to: '#' },
-							'Brand2'
+							'Timer'
 						)
 					)
 				)
