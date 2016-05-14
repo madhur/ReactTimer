@@ -8,8 +8,11 @@ var Main = React.createClass({
 		return (
 			<div>
 				<Nav></Nav>
-				Main.jsx rendered
-				{this.props.children}
+				<div className="row">
+					<div className="col-md-6 center-block">
+						{this.props.children}
+					</div>
+				</div>
 			</div>
 			);
 	}
