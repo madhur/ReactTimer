@@ -25775,12 +25775,12 @@
 						React.createElement(
 							_reactRouter.Link,
 							{ className: 'navbar-brand', to: '#' },
-							'Stopwatch'
+							'Timer'
 						),
 						React.createElement(
 							_reactRouter.Link,
 							{ className: 'navbar-brand', to: '#' },
-							'Timer'
+							'Countdown'
 						)
 					)
 				)
@@ -26204,7 +26204,7 @@
 
 
 	// module
-	exports.push([module.id, "", ""]);
+	exports.push([module.id, ".navbar-default {\n  background-color: #333333; }\n", ""]);
 
 	// exports
 
