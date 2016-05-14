@@ -8,6 +8,8 @@ var Main = React.createClass({
 		return (
 			<div>
 				<Nav></Nav>
+				Main.jsx rendered
+				{this.props.children}
 			</div>
 			);
 	}

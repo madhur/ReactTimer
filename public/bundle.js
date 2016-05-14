@@ -107,6 +107,9 @@
 
 	var Main = __webpack_require__(235);
 
+	var Timer = __webpack_require__(248);
+	var Countdown = __webpack_require__(249);
+
 	// Load foundation
 	__webpack_require__(237);
 
@@ -116,7 +119,12 @@
 	ReactDOM.render(React.createElement(
 		Router,
 		{ history: hashHistory },
-		React.createElement(Route, { path: '/', component: Main })
+		React.createElement(
+			Route,
+			{ path: '/', component: Main },
+			React.createElement(IndexRoute, { component: Timer }),
+			React.createElement(Route, { path: 'countdown', component: Countdown })
+		)
 	), document.getElementById('main'));
 
 /***/ },
@@ -25735,7 +25743,9 @@
 			return React.createElement(
 				'div',
 				null,
-				React.createElement(_Nav2.default, null)
+				React.createElement(_Nav2.default, null),
+				'Main.jsx rendered',
+				this.props.children
 			);
 		}
 	});
@@ -25769,17 +25779,17 @@
 						{ className: 'navbar-header' },
 						React.createElement(
 							_reactRouter.Link,
-							{ className: 'navbar-brand', to: '#' },
+							{ className: 'navbar-brand', to: '/' },
 							'React Timer'
 						),
 						React.createElement(
 							_reactRouter.Link,
-							{ className: 'navbar-brand', to: '#' },
+							{ className: 'navbar-brand', to: '/' },
 							'Timer'
 						),
 						React.createElement(
 							_reactRouter.Link,
-							{ className: 'navbar-brand', to: '#' },
+							{ className: 'navbar-brand', to: '/countdown' },
 							'Countdown'
 						)
 					)
@@ -26204,10 +26214,58 @@
 
 
 	// module
-	exports.push([module.id, ".navbar-default {\n  background-color: #333333; }\n", ""]);
+	exports.push([module.id, ".navbar-default {\n  background-color: #333333; }\n\n.navbar-default .navbar-brand {\n  color: cyan; }\n", ""]);
 
 	// exports
 
+
+/***/ },
+/* 248 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	var React = __webpack_require__(7);
+
+	var Timer = React.createClass({
+		displayName: 'Timer',
+
+
+		render: function render() {
+			return React.createElement(
+				'div',
+				null,
+				'Timer.jsx'
+			);
+		}
+
+	});
+
+	module.exports = Timer;
+
+/***/ },
+/* 249 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	var React = __webpack_require__(7);
+
+	var Countdown = React.createClass({
+		displayName: 'Countdown',
+
+
+		render: function render() {
+			return React.createElement(
+				'div',
+				null,
+				'Countdown.jsx'
+			);
+		}
+
+	});
+
+	module.exports = Countdown;
 
 /***/ }
 /******/ ]);
